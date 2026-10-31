@@ -1,6 +1,8 @@
 name: CDAF Targetless CD using hosted agent
 # This workflow is triggered on pushes to the repository.
-on: [push]
+on:
+  # automatic triggers removed 2026-10-30 to stop burning hosted-runner minutes; run manually
+  workflow_dispatch:
 
 jobs:
   build:
